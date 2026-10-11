@@ -1,0 +1,6 @@
+data "oci_delegate_access_control_delegated_resource_access_request" "delegate_access_control_delegated_resource_access_request_lookup" {
+  for_each = var.delegate_access_control_delegated_resource_access_request_lookup
+
+  delegated_resource_access_request_id = each.value.delegated_resource_access_request_id
+}
+
